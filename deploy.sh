@@ -3,11 +3,11 @@ docker build -t yuto358/multi-server:latest -t yuto358/multi-server:$SHA -f ./se
 docker build -t yuto358/multi-worker:latest -t yuto358/multi-worker:$SHA -f ./worker/Dockerfile.dev ./worker
 
 docker push yuto358/multi-client:latest
-docker push yuto358/mutli-server:latest
+docker push yuto358/multi-server:latest
 docker push yuto358/multi-worker:latest
 
 docker push yuto358/multi-client:$SHA
-docker push yuto358/mutli-server:$SHA
+docker push yuto358/multi-server:$SHA
 docker push yuto358/multi-worker:$SHA
 
 kubectl apply -f k8s
