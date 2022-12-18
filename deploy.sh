@@ -1,4 +1,4 @@
-docker build -t yuto358/multi-client:latest -t yuto358/multi-client:$SHA -f ./cilent/Dockerfile.dev ./client
+docker build -t yuto358/multi-client:latest -t yuto358/multi-client:$SHA -f ./client/Dockerfile.dev ./client
 docker build -t yuto358/multi-server:latest -t yuto358/multi-server:$SHA -f ./server/Dockerfile.dev ./server
 docker build -t yuto358/multi-worker:latest -t yuto358/multi-worker:$SHA -f ./worker/Dockerfile.dev ./worker
 
